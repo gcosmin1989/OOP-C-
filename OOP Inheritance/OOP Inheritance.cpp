@@ -6,10 +6,10 @@ using namespace std;
 class YoutubeChannel {
 private:
 	string name;
-	string owner_name;
 	int subscribersCount;
 	list<string> publishes_video_titles;
-
+protected:
+	string owner_name;
 public:
 	YoutubeChannel(string name_value, string owner_name_value) {
 		name = name_value;
@@ -45,7 +45,7 @@ public:
 
 	}
 	void practice() {
-		cout << "practicing cooking" << endl;
+		cout <<owner_name<< " practicing cooking" << endl;
 	}
 
 };
